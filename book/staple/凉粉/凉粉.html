@@ -1,0 +1,308 @@
+<!DOCTYPE HTML>
+<html lang="zh-Hans" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>凉粉 - cookbook</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../staple/index.html"><strong aria-hidden="true">1.</strong> 主食制作</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../staple/中式馅饼/中式馅饼.html"><strong aria-hidden="true">1.1.</strong> 中式馅饼</a></li><li class="chapter-item expanded "><a href="../../staple/凉粉/凉粉.html" class="active"><strong aria-hidden="true">1.2.</strong> 凉粉</a></li><li class="chapter-item expanded "><a href="../../staple/基础牛奶面包/基础牛奶面包.html"><strong aria-hidden="true">1.3.</strong> 基础牛奶面包</a></li><li class="chapter-item expanded "><a href="../../staple/微波炉腊肠煲仔饭/微波炉腊肠煲仔饭.html"><strong aria-hidden="true">1.4.</strong> 微波炉腊肠煲仔饭</a></li><li class="chapter-item expanded "><a href="../../staple/意式肉酱面/意式肉酱面.html"><strong aria-hidden="true">1.5.</strong> 意式肉酱面</a></li><li class="chapter-item expanded "><a href="../../staple/手工水饺.html"><strong aria-hidden="true">1.6.</strong> 手工水饺</a></li><li class="chapter-item expanded "><a href="../../staple/扬州炒饭/扬州炒饭.html"><strong aria-hidden="true">1.7.</strong> 扬州炒饭</a></li><li class="chapter-item expanded "><a href="../../staple/披萨饼皮/披萨饼皮.html"><strong aria-hidden="true">1.8.</strong> 披萨饼皮</a></li><li class="chapter-item expanded "><a href="../../staple/日式咖喱饭/日式咖喱饭.html"><strong aria-hidden="true">1.9.</strong> 日式咖喱饭</a></li><li class="chapter-item expanded "><a href="../../staple/日式肥牛丼饭/日式肥牛丼饭.html"><strong aria-hidden="true">1.10.</strong> 日式肥牛丼饭</a></li><li class="chapter-item expanded "><a href="../../staple/汤面.html"><strong aria-hidden="true">1.11.</strong> 汤面</a></li><li class="chapter-item expanded "><a href="../../staple/河南蒸面条/河南蒸面条.html"><strong aria-hidden="true">1.12.</strong> 河南蒸面条</a></li><li class="chapter-item expanded "><a href="../../staple/火腿饭团/火腿饭团.html"><strong aria-hidden="true">1.13.</strong> 火腿饭团</a></li><li class="chapter-item expanded "><a href="../../staple/炒凉粉/炒凉粉.html"><strong aria-hidden="true">1.14.</strong> 炒凉粉</a></li><li class="chapter-item expanded "><a href="../../staple/炒年糕.html"><strong aria-hidden="true">1.15.</strong> 炒年糕</a></li><li class="chapter-item expanded "><a href="../../staple/炒意大利面/炒意大利面.html"><strong aria-hidden="true">1.16.</strong> 炒意大利面</a></li><li class="chapter-item expanded "><a href="../../staple/炒方便面.html"><strong aria-hidden="true">1.17.</strong> 炒方便面</a></li><li class="chapter-item expanded "><a href="../../staple/炒河粉.html"><strong aria-hidden="true">1.18.</strong> 炒河粉</a></li><li class="chapter-item expanded "><a href="../../staple/炒馍.html"><strong aria-hidden="true">1.19.</strong> 炒馍</a></li><li class="chapter-item expanded "><a href="../../staple/炸酱面.html"><strong aria-hidden="true">1.20.</strong> 炸酱面</a></li><li class="chapter-item expanded "><a href="../../staple/烙饼/烙饼.html"><strong aria-hidden="true">1.21.</strong> 烙饼</a></li><li class="chapter-item expanded "><a href="../../staple/烧饼/芝麻烧饼.html"><strong aria-hidden="true">1.22.</strong> 烧饼</a></li><li class="chapter-item expanded "><a href="../../staple/热干面.html"><strong aria-hidden="true">1.23.</strong> 热干面</a></li><li class="chapter-item expanded "><a href="../../staple/煮泡面加蛋.html"><strong aria-hidden="true">1.24.</strong> 煮泡面加蛋</a></li><li class="chapter-item expanded "><a href="../../staple/空气炸锅照烧鸡饭/空气炸锅照烧鸡饭.html"><strong aria-hidden="true">1.25.</strong> 空气炸锅照烧鸡饭</a></li><li class="chapter-item expanded "><a href="../../staple/米饭/index.html"><strong aria-hidden="true">1.26.</strong> 米饭</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../staple/米饭/煮锅蒸米饭.html"><strong aria-hidden="true">1.26.1.</strong> 煮锅蒸米饭</a></li><li class="chapter-item expanded "><a href="../../staple/米饭/电饭煲蒸米饭.html"><strong aria-hidden="true">1.26.2.</strong> 电饭煲蒸米饭</a></li></ol></li><li class="chapter-item expanded "><a href="../../staple/老友猪肉粉.html"><strong aria-hidden="true">1.27.</strong> 老友猪肉粉</a></li><li class="chapter-item expanded "><a href="../../staple/老干妈拌面.html"><strong aria-hidden="true">1.28.</strong> 老干妈拌面</a></li><li class="chapter-item expanded "><a href="../../staple/肉蛋盖饭.html"><strong aria-hidden="true">1.29.</strong> 肉蛋盖饭</a></li><li class="chapter-item expanded "><a href="../../staple/茄子肉煎饼/茄子肉煎饼.html"><strong aria-hidden="true">1.30.</strong> 茄子肉煎饼</a></li><li class="chapter-item expanded "><a href="../../staple/葱油拌面.html"><strong aria-hidden="true">1.31.</strong> 葱油拌面</a></li><li class="chapter-item expanded "><a href="../../staple/蒸卤面.html"><strong aria-hidden="true">1.32.</strong> 蒸卤面</a></li><li class="chapter-item expanded "><a href="../../staple/蛋包饭.html"><strong aria-hidden="true">1.33.</strong> 蛋包饭</a></li><li class="chapter-item expanded "><a href="../../staple/蛋炒饭.html"><strong aria-hidden="true">1.34.</strong> 蛋炒饭</a></li><li class="chapter-item expanded "><a href="../../staple/螺蛳粉.html"><strong aria-hidden="true">1.35.</strong> 螺蛳粉</a></li><li class="chapter-item expanded "><a href="../../staple/西红柿鸡蛋挂面/西红柿鸡蛋挂面.html"><strong aria-hidden="true">1.36.</strong> 西红柿鸡蛋挂面</a></li><li class="chapter-item expanded "><a href="../../staple/豆角焖面/豆角焖面.html"><strong aria-hidden="true">1.37.</strong> 豆角焖面</a></li><li class="chapter-item expanded "><a href="../../staple/酱拌荞麦面/酱拌荞麦面.html"><strong aria-hidden="true">1.38.</strong> 酱拌荞麦面</a></li><li class="chapter-item expanded "><a href="../../staple/酸辣蕨根粉.html"><strong aria-hidden="true">1.39.</strong> 酸辣蕨根粉</a></li><li class="chapter-item expanded "><a href="../../staple/醪糟小汤圆.html"><strong aria-hidden="true">1.40.</strong> 醪糟小汤圆</a></li><li class="chapter-item expanded "><a href="../../staple/韩式拌饭/韩式拌饭.html"><strong aria-hidden="true">1.41.</strong> 韩式拌饭</a></li><li class="chapter-item expanded "><a href="../../staple/韭菜盒子.html"><strong aria-hidden="true">1.42.</strong> 韭菜盒子</a></li><li class="chapter-item expanded "><a href="../../staple/鲣鱼海苔玉米饭/鲣鱼海苔玉米饭.html"><strong aria-hidden="true">1.43.</strong> 鲣鱼海苔玉米饭</a></li><li class="chapter-item expanded "><a href="../../staple/麻油拌面.html"><strong aria-hidden="true">1.44.</strong> 麻油拌面</a></li><li class="chapter-item expanded "><a href="../../staple/麻辣减脂荞麦面.html"><strong aria-hidden="true">1.45.</strong> 麻辣减脂荞麦面</a></li></ol></li><li class="chapter-item expanded "><a href="../../vegetable_dish/index.html"><strong aria-hidden="true">2.</strong> 素菜食谱</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../vegetable_dish/上汤娃娃菜/上汤娃娃菜.html"><strong aria-hidden="true">2.1.</strong> 上汤娃娃菜</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/凉拌木耳/凉拌木耳.html"><strong aria-hidden="true">2.2.</strong> 凉拌木耳</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/凉拌油麦菜.html"><strong aria-hidden="true">2.3.</strong> 凉拌油麦菜</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/凉拌莴笋/凉拌莴笋.html"><strong aria-hidden="true">2.4.</strong> 凉拌莴笋</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/凉拌黄瓜.html"><strong aria-hidden="true">2.5.</strong> 凉拌黄瓜</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/包菜炒鸡蛋粉丝/包菜炒鸡蛋粉丝.html"><strong aria-hidden="true">2.6.</strong> 包菜炒鸡蛋粉丝</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/地三鲜.html"><strong aria-hidden="true">2.7.</strong> 地三鲜</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/小炒藕丁/小炒藕丁.html"><strong aria-hidden="true">2.8.</strong> 小炒藕丁</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/干锅花菜/干锅花菜.html"><strong aria-hidden="true">2.9.</strong> 干锅花菜</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/手撕包菜/手撕包菜.html"><strong aria-hidden="true">2.10.</strong> 手撕包菜</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/拔丝土豆/拔丝土豆.html"><strong aria-hidden="true">2.11.</strong> 拔丝土豆</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/松仁玉米.html"><strong aria-hidden="true">2.12.</strong> 松仁玉米</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/椒盐玉米/椒盐玉米.html"><strong aria-hidden="true">2.13.</strong> 椒盐玉米</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/榄菜肉末四季豆/榄菜肉末四季豆.html"><strong aria-hidden="true">2.14.</strong> 榄菜肉末四季豆</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/水油焖蔬菜.html"><strong aria-hidden="true">2.15.</strong> 水油焖蔬菜</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/洋葱炒鸡蛋/洋葱炒鸡蛋.html"><strong aria-hidden="true">2.16.</strong> 洋葱炒鸡蛋</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/炒滑蛋/炒滑蛋.html"><strong aria-hidden="true">2.17.</strong> 炒滑蛋</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/炒茄子.html"><strong aria-hidden="true">2.18.</strong> 炒茄子</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/炒青菜.html"><strong aria-hidden="true">2.19.</strong> 炒青菜</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/烤茄子/烤茄子.html"><strong aria-hidden="true">2.20.</strong> 烤茄子</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/白灼菜心/白灼菜心.html"><strong aria-hidden="true">2.21.</strong> 白灼菜心</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/糖拌西红柿.html"><strong aria-hidden="true">2.22.</strong> 糖拌西红柿</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/素炒豆角.html"><strong aria-hidden="true">2.23.</strong> 素炒豆角</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/红烧冬瓜/红烧冬瓜.html"><strong aria-hidden="true">2.24.</strong> 红烧冬瓜</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/红烧茄子.html"><strong aria-hidden="true">2.25.</strong> 红烧茄子</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/脆皮豆腐.html"><strong aria-hidden="true">2.26.</strong> 脆皮豆腐</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/芹菜拌茶树菇/芹菜拌茶树菇.html"><strong aria-hidden="true">2.27.</strong> 芹菜拌茶树菇</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/茄子炖土豆.html"><strong aria-hidden="true">2.28.</strong> 茄子炖土豆</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/茭白炒肉/茭白炒肉.html"><strong aria-hidden="true">2.29.</strong> 茭白炒肉</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/莴笋叶煎饼/莴笋叶煎饼.html"><strong aria-hidden="true">2.30.</strong> 莴笋叶煎饼</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/菠菜炒鸡蛋/菠菜炒鸡蛋.html"><strong aria-hidden="true">2.31.</strong> 菠菜炒鸡蛋</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/葱煎豆腐.html"><strong aria-hidden="true">2.32.</strong> 葱煎豆腐</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/蒜蓉空心菜/蒜蓉空心菜.html"><strong aria-hidden="true">2.33.</strong> 蒜蓉空心菜</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/蒜蓉西兰花.html"><strong aria-hidden="true">2.34.</strong> 蒜蓉西兰花</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/蒲烧茄子.html"><strong aria-hidden="true">2.35.</strong> 蒲烧茄子</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/虎皮青椒/虎皮青椒.html"><strong aria-hidden="true">2.36.</strong> 虎皮青椒</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/蚝油三鲜菇/蚝油三鲜菇.html"><strong aria-hidden="true">2.37.</strong> 蚝油三鲜菇</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/蚝油生菜.html"><strong aria-hidden="true">2.38.</strong> 蚝油生菜</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/西红柿炒鸡蛋.html"><strong aria-hidden="true">2.39.</strong> 西红柿炒鸡蛋</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/西红柿豆腐汤羹/西红柿豆腐汤羹.html"><strong aria-hidden="true">2.40.</strong> 西红柿豆腐汤羹</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/西葫芦炒鸡蛋/西葫芦炒鸡蛋.html"><strong aria-hidden="true">2.41.</strong> 西葫芦炒鸡蛋</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/话梅煮毛豆/话梅煮毛豆.html"><strong aria-hidden="true">2.42.</strong> 话梅煮毛豆</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/酸辣土豆丝.html"><strong aria-hidden="true">2.43.</strong> 酸辣土豆丝</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/金针菇日本豆腐煲.html"><strong aria-hidden="true">2.44.</strong> 金针菇日本豆腐煲</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/陕北熬豆角.html"><strong aria-hidden="true">2.45.</strong> 陕北熬豆角</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/雷椒皮蛋.html"><strong aria-hidden="true">2.46.</strong> 雷椒皮蛋</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/鸡蛋火腿炒黄瓜.html"><strong aria-hidden="true">2.47.</strong> 鸡蛋火腿炒黄瓜</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/鸡蛋羹/index.html"><strong aria-hidden="true">2.48.</strong> 鸡蛋羹</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../vegetable_dish/鸡蛋羹/微波炉鸡蛋羹.html"><strong aria-hidden="true">2.48.1.</strong> 微波炉鸡蛋羹</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/鸡蛋羹/蒸箱鸡蛋羹.html"><strong aria-hidden="true">2.48.2.</strong> 蒸箱鸡蛋羹</a></li><li class="chapter-item expanded "><a href="../../vegetable_dish/鸡蛋羹/鸡蛋羹.html"><strong aria-hidden="true">2.48.3.</strong> 传统鸡蛋羹</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../meat_dish/index.html"><strong aria-hidden="true">3.</strong> 荤菜食谱</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../meat_dish/乡村啤酒鸭.html"><strong aria-hidden="true">3.1.</strong> 乡村啤酒鸭</a></li><li class="chapter-item expanded "><a href="../../meat_dish/农家一碗香/农家一碗香.html"><strong aria-hidden="true">3.2.</strong> 农家一碗香</a></li><li class="chapter-item expanded "><a href="../../meat_dish/冬瓜酿肉/冬瓜酿肉.html"><strong aria-hidden="true">3.3.</strong> 冬瓜酿肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/冷吃兔.html"><strong aria-hidden="true">3.4.</strong> 冷吃兔</a></li><li class="chapter-item expanded "><a href="../../meat_dish/凉拌鸡丝/凉拌鸡丝.html"><strong aria-hidden="true">3.5.</strong> 凉拌鸡丝</a></li><li class="chapter-item expanded "><a href="../../meat_dish/卤菜/卤菜.html"><strong aria-hidden="true">3.6.</strong> 卤菜</a></li><li class="chapter-item expanded "><a href="../../meat_dish/口水鸡/口水鸡.html"><strong aria-hidden="true">3.7.</strong> 口水鸡</a></li><li class="chapter-item expanded "><a href="../../meat_dish/可乐鸡翅.html"><strong aria-hidden="true">3.8.</strong> 可乐鸡翅</a></li><li class="chapter-item expanded "><a href="../../meat_dish/台式卤肉饭/台式卤肉饭.html"><strong aria-hidden="true">3.9.</strong> 台式卤肉饭</a></li><li class="chapter-item expanded "><a href="../../meat_dish/咕噜肉.html"><strong aria-hidden="true">3.10.</strong> 咕噜肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/咖喱肥牛/咖喱肥牛.html"><strong aria-hidden="true">3.11.</strong> 咖喱肥牛</a></li><li class="chapter-item expanded "><a href="../../meat_dish/商芝肉.html"><strong aria-hidden="true">3.12.</strong> 商芝肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/啤酒鸭/啤酒鸭.html"><strong aria-hidden="true">3.13.</strong> 啤酒鸭</a></li><li class="chapter-item expanded "><a href="../../meat_dish/回锅肉/回锅肉.html"><strong aria-hidden="true">3.14.</strong> 回锅肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/土豆炖排骨/土豆炖排骨.html"><strong aria-hidden="true">3.15.</strong> 土豆炖排骨</a></li><li class="chapter-item expanded "><a href="../../meat_dish/奶酪培根通心粉/奶酪培根通心粉.html"><strong aria-hidden="true">3.16.</strong> 奶酪培根通心粉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/姜炒鸡/姜炒鸡.html"><strong aria-hidden="true">3.17.</strong> 姜炒鸡</a></li><li class="chapter-item expanded "><a href="../../meat_dish/姜葱捞鸡/姜葱捞鸡.html"><strong aria-hidden="true">3.18.</strong> 姜葱捞鸡</a></li><li class="chapter-item expanded "><a href="../../meat_dish/孜然牛肉.html"><strong aria-hidden="true">3.19.</strong> 孜然牛肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/宫保鸡丁/宫保鸡丁.html"><strong aria-hidden="true">3.20.</strong> 宫保鸡丁</a></li><li class="chapter-item expanded "><a href="../../meat_dish/小炒肉.html"><strong aria-hidden="true">3.21.</strong> 小炒肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/小炒鸡肝/小炒鸡肝.html"><strong aria-hidden="true">3.22.</strong> 小炒鸡肝</a></li><li class="chapter-item expanded "><a href="../../meat_dish/小炒黄牛肉/小炒黄牛肉.html"><strong aria-hidden="true">3.23.</strong> 小炒黄牛肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/小米辣炒肉.html"><strong aria-hidden="true">3.24.</strong> 小米辣炒肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/小酥肉.html"><strong aria-hidden="true">3.25.</strong> 小酥肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/尖叫牛蛙/尖叫牛蛙.html"><strong aria-hidden="true">3.26.</strong> 尖叫牛蛙</a></li><li class="chapter-item expanded "><a href="../../meat_dish/尖椒炒牛肉.html"><strong aria-hidden="true">3.27.</strong> 尖椒炒牛肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/山西过油肉.html"><strong aria-hidden="true">3.28.</strong> 山西过油肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/巴基斯坦牛肉咖喱/巴基斯坦牛肉咖喱.html"><strong aria-hidden="true">3.29.</strong> 巴基斯坦牛肉咖喱</a></li><li class="chapter-item expanded "><a href="../../meat_dish/带把肘子.html"><strong aria-hidden="true">3.30.</strong> 带把肘子</a></li><li class="chapter-item expanded "><a href="../../meat_dish/干煸仔鸡/干煸仔鸡.html"><strong aria-hidden="true">3.31.</strong> 干煸仔鸡</a></li><li class="chapter-item expanded "><a href="../../meat_dish/广式萝卜牛腩/广式萝卜牛腩.html"><strong aria-hidden="true">3.32.</strong> 广式萝卜牛腩</a></li><li class="chapter-item expanded "><a href="../../meat_dish/徽派红烧肉/徽派红烧肉.html"><strong aria-hidden="true">3.33.</strong> 徽派红烧肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/意式烤鸡.html"><strong aria-hidden="true">3.34.</strong> 意式烤鸡</a></li><li class="chapter-item expanded "><a href="../../meat_dish/新疆大盘鸡/新疆大盘鸡.html"><strong aria-hidden="true">3.35.</strong> 新疆大盘鸡</a></li><li class="chapter-item expanded "><a href="../../meat_dish/无骨鸡爪/无骨鸡爪.html"><strong aria-hidden="true">3.36.</strong> 无骨鸡爪</a></li><li class="chapter-item expanded "><a href="../../meat_dish/杀猪菜.html"><strong aria-hidden="true">3.37.</strong> 杀猪菜</a></li><li class="chapter-item expanded "><a href="../../meat_dish/枝竹羊腩煲/枝竹羊腩煲.html"><strong aria-hidden="true">3.38.</strong> 枝竹羊腩煲</a></li><li class="chapter-item expanded "><a href="../../meat_dish/柱候牛腩/柱候牛腩.html"><strong aria-hidden="true">3.39.</strong> 柱候牛腩</a></li><li class="chapter-item expanded "><a href="../../meat_dish/梅菜扣肉/梅菜扣肉.html"><strong aria-hidden="true">3.40.</strong> 梅菜扣肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/椒盐排条.html"><strong aria-hidden="true">3.41.</strong> 椒盐排条</a></li><li class="chapter-item expanded "><a href="../../meat_dish/水煮牛肉/水煮牛肉.html"><strong aria-hidden="true">3.42.</strong> 水煮牛肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/水煮肉片.html"><strong aria-hidden="true">3.43.</strong> 水煮肉片</a></li><li class="chapter-item expanded "><a href="../../meat_dish/洋葱炒猪肉.html"><strong aria-hidden="true">3.44.</strong> 洋葱炒猪肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/清蒸鳜鱼/清蒸鳜鱼.html"><strong aria-hidden="true">3.45.</strong> 清蒸鳜鱼</a></li><li class="chapter-item expanded "><a href="../../meat_dish/湖南家常红烧肉/湖南家常红烧肉.html"><strong aria-hidden="true">3.46.</strong> 湖南家常红烧肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/湘祁米夫鸭/湘祁米夫鸭.html"><strong aria-hidden="true">3.47.</strong> 湘祁米夫鸭</a></li><li class="chapter-item expanded "><a href="../../meat_dish/烤鸡翅.html"><strong aria-hidden="true">3.48.</strong> 烤鸡翅</a></li><li class="chapter-item expanded "><a href="../../meat_dish/牛排/牛排.html"><strong aria-hidden="true">3.49.</strong> 牛排</a></li><li class="chapter-item expanded "><a href="../../meat_dish/猪皮冻/猪皮冻.html"><strong aria-hidden="true">3.50.</strong> 猪皮冻</a></li><li class="chapter-item expanded "><a href="../../meat_dish/猪肉烩酸菜.html"><strong aria-hidden="true">3.51.</strong> 猪肉烩酸菜</a></li><li class="chapter-item expanded "><a href="../../meat_dish/甜辣烤全翅.html"><strong aria-hidden="true">3.52.</strong> 甜辣烤全翅</a></li><li class="chapter-item expanded "><a href="../../meat_dish/番茄红酱.html"><strong aria-hidden="true">3.53.</strong> 番茄红酱</a></li><li class="chapter-item expanded "><a href="../../meat_dish/瘦肉土豆片/瘦肉土豆片.html"><strong aria-hidden="true">3.54.</strong> 瘦肉土豆片</a></li><li class="chapter-item expanded "><a href="../../meat_dish/白菜猪肉炖粉条.html"><strong aria-hidden="true">3.55.</strong> 白菜猪肉炖粉条</a></li><li class="chapter-item expanded "><a href="../../meat_dish/粉蒸肉.html"><strong aria-hidden="true">3.56.</strong> 粉蒸肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/糖醋排骨/糖醋排骨.html"><strong aria-hidden="true">3.57.</strong> 糖醋排骨</a></li><li class="chapter-item expanded "><a href="../../meat_dish/糖醋里脊.html"><strong aria-hidden="true">3.58.</strong> 糖醋里脊</a></li><li class="chapter-item expanded "><a href="../../meat_dish/红烧猪蹄/红烧猪蹄.html"><strong aria-hidden="true">3.59.</strong> 红烧猪蹄</a></li><li class="chapter-item expanded "><a href="../../meat_dish/红烧肉/index.html"><strong aria-hidden="true">3.60.</strong> 红烧肉</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../meat_dish/红烧肉/南派红烧肉.html"><strong aria-hidden="true">3.60.1.</strong> 南派红烧肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/红烧肉/简易红烧肉.html"><strong aria-hidden="true">3.60.2.</strong> 简易红烧肉</a></li></ol></li><li class="chapter-item expanded "><a href="../../meat_dish/羊排焖面/羊排焖面.html"><strong aria-hidden="true">3.61.</strong> 羊排焖面</a></li><li class="chapter-item expanded "><a href="../../meat_dish/老妈蹄花/老妈蹄花.html"><strong aria-hidden="true">3.62.</strong> 老妈蹄花</a></li><li class="chapter-item expanded "><a href="../../meat_dish/老式锅包肉/老式锅包肉.html"><strong aria-hidden="true">3.63.</strong> 老式锅包肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/肉饼炖蛋.html"><strong aria-hidden="true">3.64.</strong> 肉饼炖蛋</a></li><li class="chapter-item expanded "><a href="../../meat_dish/芥末罗氏虾/芥末罗氏虾.html"><strong aria-hidden="true">3.65.</strong> 芥末罗氏虾</a></li><li class="chapter-item expanded "><a href="../../meat_dish/荔枝肉/荔枝肉.html"><strong aria-hidden="true">3.66.</strong> 荔枝肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/荷兰豆炒腊肠/荷兰豆炒腊肠.html"><strong aria-hidden="true">3.67.</strong> 荷兰豆炒腊肠</a></li><li class="chapter-item expanded "><a href="../../meat_dish/萝卜炖羊排.html"><strong aria-hidden="true">3.68.</strong> 萝卜炖羊排</a></li><li class="chapter-item expanded "><a href="../../meat_dish/蒜苔炒肉末.html"><strong aria-hidden="true">3.69.</strong> 蒜苔炒肉末</a></li><li class="chapter-item expanded "><a href="../../meat_dish/虎皮肘子.html"><strong aria-hidden="true">3.70.</strong> 虎皮肘子</a></li><li class="chapter-item expanded "><a href="../../meat_dish/蚂蚁上树.html"><strong aria-hidden="true">3.71.</strong> 蚂蚁上树</a></li><li class="chapter-item expanded "><a href="../../meat_dish/血浆鸭/血浆鸭.html"><strong aria-hidden="true">3.72.</strong> 血浆鸭</a></li><li class="chapter-item expanded "><a href="../../meat_dish/西红柿土豆炖牛肉/西红柿土豆炖牛肉.html"><strong aria-hidden="true">3.73.</strong> 西红柿土豆炖牛肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/西红柿牛腩/西红柿牛腩.html"><strong aria-hidden="true">3.74.</strong> 西红柿牛腩</a></li><li class="chapter-item expanded "><a href="../../meat_dish/豆豉鲮鱼油麦菜/豆豉鲮鱼油麦菜.html"><strong aria-hidden="true">3.75.</strong> 豆豉鲮鱼油麦菜</a></li><li class="chapter-item expanded "><a href="../../meat_dish/贵州辣子鸡/贵州辣子鸡.html"><strong aria-hidden="true">3.76.</strong> 贵州辣子鸡</a></li><li class="chapter-item expanded "><a href="../../meat_dish/辣椒炒肉.html"><strong aria-hidden="true">3.77.</strong> 辣椒炒肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/酱排骨/酱排骨.html"><strong aria-hidden="true">3.78.</strong> 酱排骨</a></li><li class="chapter-item expanded "><a href="../../meat_dish/酱牛肉/酱牛肉.html"><strong aria-hidden="true">3.79.</strong> 酱牛肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/醉排骨/醉排骨.html"><strong aria-hidden="true">3.80.</strong> 醉排骨</a></li><li class="chapter-item expanded "><a href="../../meat_dish/青椒土豆炒肉/青椒土豆炒肉.html"><strong aria-hidden="true">3.81.</strong> 青椒土豆炒肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/香干肉丝.html"><strong aria-hidden="true">3.82.</strong> 香干肉丝</a></li><li class="chapter-item expanded "><a href="../../meat_dish/香干芹菜炒肉/香干芹菜炒肉.html"><strong aria-hidden="true">3.83.</strong> 香干芹菜炒肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/香煎五花肉/香煎五花肉.html"><strong aria-hidden="true">3.84.</strong> 香煎五花肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/香菇滑鸡/香菇滑鸡.html"><strong aria-hidden="true">3.85.</strong> 香菇滑鸡</a></li><li class="chapter-item expanded "><a href="../../meat_dish/香辣鸡爪煲/香辣鸡爪煲.html"><strong aria-hidden="true">3.86.</strong> 香辣鸡爪煲</a></li><li class="chapter-item expanded "><a href="../../meat_dish/鱼香肉丝.html"><strong aria-hidden="true">3.87.</strong> 鱼香肉丝</a></li><li class="chapter-item expanded "><a href="../../meat_dish/鱼香茄子/鱼香茄子.html"><strong aria-hidden="true">3.88.</strong> 鱼香茄子</a></li><li class="chapter-item expanded "><a href="../../meat_dish/麻婆豆腐/麻婆豆腐.html"><strong aria-hidden="true">3.89.</strong> 麻婆豆腐</a></li><li class="chapter-item expanded "><a href="../../meat_dish/麻辣香锅.html"><strong aria-hidden="true">3.90.</strong> 麻辣香锅</a></li><li class="chapter-item expanded "><a href="../../meat_dish/黄焖鸡.html"><strong aria-hidden="true">3.91.</strong> 黄焖鸡</a></li><li class="chapter-item expanded "><a href="../../meat_dish/黄瓜炒肉.html"><strong aria-hidden="true">3.92.</strong> 黄瓜炒肉</a></li><li class="chapter-item expanded "><a href="../../meat_dish/黑椒牛柳/黑椒牛柳.html"><strong aria-hidden="true">3.93.</strong> 黑椒牛柳</a></li><li class="chapter-item expanded "><a href="../../meat_dish/黔式腊肠娃娃菜/黔式腊肠娃娃菜.html"><strong aria-hidden="true">3.94.</strong> 黔式腊肠娃娃菜</a></li></ol></li><li class="chapter-item expanded "><a href="../../aquatic/index.html"><strong aria-hidden="true">4.</strong> 水产品食谱</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../aquatic/咖喱炒蟹.html"><strong aria-hidden="true">4.1.</strong> 咖喱炒蟹</a></li><li class="chapter-item expanded "><a href="../../aquatic/小龙虾/小龙虾.html"><strong aria-hidden="true">4.2.</strong> 小龙虾</a></li><li class="chapter-item expanded "><a href="../../aquatic/干煎阿根廷红虾/干煎阿根廷红虾.html"><strong aria-hidden="true">4.3.</strong> 干煎阿根廷红虾</a></li><li class="chapter-item expanded "><a href="../../aquatic/微波葱姜黑鳕鱼.html"><strong aria-hidden="true">4.4.</strong> 微波葱姜黑鳕鱼</a></li><li class="chapter-item expanded "><a href="../../aquatic/水煮鱼.html"><strong aria-hidden="true">4.5.</strong> 水煮鱼</a></li><li class="chapter-item expanded "><a href="../../aquatic/油焖大虾/油焖大虾.html"><strong aria-hidden="true">4.6.</strong> 油焖大虾</a></li><li class="chapter-item expanded "><a href="../../aquatic/混合烤鱼/烤鱼.html"><strong aria-hidden="true">4.7.</strong> 混合烤鱼</a></li><li class="chapter-item expanded "><a href="../../aquatic/清蒸生蚝.html"><strong aria-hidden="true">4.8.</strong> 清蒸生蚝</a></li><li class="chapter-item expanded "><a href="../../aquatic/清蒸鲈鱼/清蒸鲈鱼.html"><strong aria-hidden="true">4.9.</strong> 清蒸鲈鱼</a></li><li class="chapter-item expanded "><a href="../../aquatic/白灼虾/白灼虾.html"><strong aria-hidden="true">4.10.</strong> 白灼虾</a></li><li class="chapter-item expanded "><a href="../../aquatic/糖醋鲤鱼/糖醋鲤鱼.html"><strong aria-hidden="true">4.11.</strong> 糖醋鲤鱼</a></li><li class="chapter-item expanded "><a href="../../aquatic/红烧鱼.html"><strong aria-hidden="true">4.12.</strong> 红烧鱼</a></li><li class="chapter-item expanded "><a href="../../aquatic/红烧鱼头.html"><strong aria-hidden="true">4.13.</strong> 红烧鱼头</a></li><li class="chapter-item expanded "><a href="../../aquatic/红烧鲤鱼.html"><strong aria-hidden="true">4.14.</strong> 红烧鲤鱼</a></li><li class="chapter-item expanded "><a href="../../aquatic/芥末黄油罗氏虾/芥末黄油罗氏虾.html"><strong aria-hidden="true">4.15.</strong> 芥末黄油罗氏虾</a></li><li class="chapter-item expanded "><a href="../../aquatic/葱油桂鱼/葱油桂鱼.html"><strong aria-hidden="true">4.16.</strong> 葱油桂鱼</a></li><li class="chapter-item expanded "><a href="../../aquatic/葱烧海参/葱烧海参.html"><strong aria-hidden="true">4.17.</strong> 葱烧海参</a></li><li class="chapter-item expanded "><a href="../../aquatic/蒜蓉虾/蒜蓉虾.html"><strong aria-hidden="true">4.18.</strong> 蒜蓉虾</a></li><li class="chapter-item expanded "><a href="../../aquatic/蒜香黄油虾/蒜香黄油虾.html"><strong aria-hidden="true">4.19.</strong> 蒜香黄油虾</a></li><li class="chapter-item expanded "><a href="../../aquatic/蛏抱蛋/蛏抱蛋.html"><strong aria-hidden="true">4.20.</strong> 蛏抱蛋</a></li><li class="chapter-item expanded "><a href="../../aquatic/香煎翘嘴鱼/香煎翘嘴鱼.html"><strong aria-hidden="true">4.21.</strong> 香煎翘嘴鱼</a></li><li class="chapter-item expanded "><a href="../../aquatic/鲤鱼炖白菜/鲤鱼炖白菜.html"><strong aria-hidden="true">4.22.</strong> 鲤鱼炖白菜</a></li><li class="chapter-item expanded "><a href="../../aquatic/鳊鱼炖豆腐/鳊鱼炖豆腐.html"><strong aria-hidden="true">4.23.</strong> 鳊鱼炖豆腐</a></li><li class="chapter-item expanded "><a href="../../aquatic/黄油煎虾/黄油煎虾.html"><strong aria-hidden="true">4.24.</strong> 黄油煎虾</a></li></ol></li><li class="chapter-item expanded "><a href="../../soup/index.html"><strong aria-hidden="true">5.</strong> 汤品食谱</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../soup/勾芡香菇汤/勾芡香菇汤.html"><strong aria-hidden="true">5.1.</strong> 勾芡香菇汤</a></li><li class="chapter-item expanded "><a href="../../soup/奶油蘑菇汤.html"><strong aria-hidden="true">5.2.</strong> 奶油蘑菇汤</a></li><li class="chapter-item expanded "><a href="../../soup/小米粥.html"><strong aria-hidden="true">5.3.</strong> 小米粥</a></li><li class="chapter-item expanded "><a href="../../soup/排骨苦瓜汤/排骨苦瓜汤.html"><strong aria-hidden="true">5.4.</strong> 排骨苦瓜汤</a></li><li class="chapter-item expanded "><a href="../../soup/昂刺鱼豆腐汤/昂刺鱼豆腐汤.html"><strong aria-hidden="true">5.5.</strong> 昂刺鱼豆腐汤</a></li><li class="chapter-item expanded "><a href="../../soup/朱雀汤/朱雀汤.html"><strong aria-hidden="true">5.6.</strong> 朱雀汤</a></li><li class="chapter-item expanded "><a href="../../soup/玉米排骨汤/玉米排骨汤.html"><strong aria-hidden="true">5.7.</strong> 玉米排骨汤</a></li><li class="chapter-item expanded "><a href="../../soup/生汆丸子汤.html"><strong aria-hidden="true">5.8.</strong> 生汆丸子汤</a></li><li class="chapter-item expanded "><a href="../../soup/番茄牛肉蛋花汤.html"><strong aria-hidden="true">5.9.</strong> 番茄牛肉蛋花汤</a></li><li class="chapter-item expanded "><a href="../../soup/皮蛋瘦肉粥.html"><strong aria-hidden="true">5.10.</strong> 皮蛋瘦肉粥</a></li><li class="chapter-item expanded "><a href="../../soup/米粥.html"><strong aria-hidden="true">5.11.</strong> 米粥</a></li><li class="chapter-item expanded "><a href="../../soup/紫菜蛋花汤.html"><strong aria-hidden="true">5.12.</strong> 紫菜蛋花汤</a></li><li class="chapter-item expanded "><a href="../../soup/罗宋汤.html"><strong aria-hidden="true">5.13.</strong> 罗宋汤</a></li><li class="chapter-item expanded "><a href="../../soup/羊肉汤/羊肉汤.html"><strong aria-hidden="true">5.14.</strong> 羊肉汤</a></li><li class="chapter-item expanded "><a href="../../soup/腊八粥.html"><strong aria-hidden="true">5.15.</strong> 腊八粥</a></li><li class="chapter-item expanded "><a href="../../soup/菌菇炖乳鸽/菌菇炖乳鸽.html"><strong aria-hidden="true">5.16.</strong> 菌菇炖乳鸽</a></li><li class="chapter-item expanded "><a href="../../soup/西红柿鸡蛋汤.html"><strong aria-hidden="true">5.17.</strong> 西红柿鸡蛋汤</a></li><li class="chapter-item expanded "><a href="../../soup/金针菇汤.html"><strong aria-hidden="true">5.18.</strong> 金针菇汤</a></li><li class="chapter-item expanded "><a href="../../soup/银耳莲子粥/银耳莲子粥.html"><strong aria-hidden="true">5.19.</strong> 银耳莲子粥</a></li><li class="chapter-item expanded "><a href="../../soup/陈皮排骨汤/陈皮排骨汤.html"><strong aria-hidden="true">5.20.</strong> 陈皮排骨汤</a></li><li class="chapter-item expanded "><a href="../../soup/陈皮排骨汤.html"><strong aria-hidden="true">5.21.</strong> 陈皮排骨汤</a></li></ol></li><li class="chapter-item expanded "><a href="../../semi-finished/index.html"><strong aria-hidden="true">6.</strong> 半成品加工</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../semi-finished/凉皮.html"><strong aria-hidden="true">6.1.</strong> 凉皮</a></li><li class="chapter-item expanded "><a href="../../semi-finished/半成品意面.html"><strong aria-hidden="true">6.2.</strong> 半成品意面</a></li><li class="chapter-item expanded "><a href="../../semi-finished/懒人蛋挞/懒人蛋挞.html"><strong aria-hidden="true">6.3.</strong> 懒人蛋挞</a></li><li class="chapter-item expanded "><a href="../../semi-finished/炸薯条/炸薯条.html"><strong aria-hidden="true">6.4.</strong> 炸薯条</a></li><li class="chapter-item expanded "><a href="../../semi-finished/牛油火锅底料.html"><strong aria-hidden="true">6.5.</strong> 牛油火锅底料</a></li><li class="chapter-item expanded "><a href="../../semi-finished/空气炸锅羊排/空气炸锅羊排.html"><strong aria-hidden="true">6.6.</strong> 空气炸锅羊排</a></li><li class="chapter-item expanded "><a href="../../semi-finished/空气炸锅鸡翅中/空气炸锅鸡翅中.html"><strong aria-hidden="true">6.7.</strong> 空气炸锅鸡翅中</a></li><li class="chapter-item expanded "><a href="../../semi-finished/速冻水饺.html"><strong aria-hidden="true">6.8.</strong> 速冻水饺</a></li><li class="chapter-item expanded "><a href="../../semi-finished/速冻汤圆/速冻汤圆.html"><strong aria-hidden="true">6.9.</strong> 速冻汤圆</a></li><li class="chapter-item expanded "><a href="../../semi-finished/速冻馄饨.html"><strong aria-hidden="true">6.10.</strong> 速冻馄饨</a></li></ol></li><li class="chapter-item expanded "><a href="../../dessert/index.html"><strong aria-hidden="true">7.</strong> 甜品食谱</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../dessert/反沙芋头/反沙芋头.html"><strong aria-hidden="true">7.1.</strong> 反沙芋头</a></li><li class="chapter-item expanded "><a href="../../dessert/咖啡椰奶冻/咖啡椰奶冻.html"><strong aria-hidden="true">7.2.</strong> 咖啡椰奶冻</a></li><li class="chapter-item expanded "><a href="../../dessert/奥利奥冰淇淋/奥利奥冰淇淋.html"><strong aria-hidden="true">7.3.</strong> 奥利奥冰淇淋</a></li><li class="chapter-item expanded "><a href="../../dessert/戚风蛋糕/戚风蛋糕.html"><strong aria-hidden="true">7.4.</strong> 戚风蛋糕</a></li><li class="chapter-item expanded "><a href="../../dessert/提拉米苏/提拉米苏.html"><strong aria-hidden="true">7.5.</strong> 提拉米苏</a></li><li class="chapter-item expanded "><a href="../../dessert/炸鲜奶/炸鲜奶.html"><strong aria-hidden="true">7.6.</strong> 炸鲜奶</a></li><li class="chapter-item expanded "><a href="../../dessert/烤蛋挞/烤蛋挞.html"><strong aria-hidden="true">7.7.</strong> 烤蛋挞</a></li><li class="chapter-item expanded "><a href="../../dessert/玛格丽特饼干/玛格丽特饼干.html"><strong aria-hidden="true">7.8.</strong> 玛格丽特饼干</a></li><li class="chapter-item expanded "><a href="../../dessert/红柚蛋糕/红柚蛋糕.html"><strong aria-hidden="true">7.9.</strong> 红柚蛋糕</a></li><li class="chapter-item expanded "><a href="../../dessert/芋泥雪媚娘/芋泥雪媚娘.html"><strong aria-hidden="true">7.10.</strong> 芋泥雪媚娘</a></li><li class="chapter-item expanded "><a href="../../dessert/英式司康/英式司康.html"><strong aria-hidden="true">7.11.</strong> 英式司康</a></li><li class="chapter-item expanded "><a href="../../dessert/草莓冰淇淋/草莓冰淇淋.html"><strong aria-hidden="true">7.12.</strong> 草莓冰淇淋</a></li><li class="chapter-item expanded "><a href="../../dessert/酸奶意式奶冻/酸奶意式奶冻.html"><strong aria-hidden="true">7.13.</strong> 酸奶意式奶冻</a></li><li class="chapter-item expanded "><a href="../../dessert/雪花酥/雪花酥.html"><strong aria-hidden="true">7.14.</strong> 雪花酥</a></li><li class="chapter-item expanded "><a href="../../dessert/魔芋蛋糕/魔芋蛋糕.html"><strong aria-hidden="true">7.15.</strong> 魔芋蛋糕</a></li><li class="chapter-item expanded "><a href="../../dessert/龟苓膏/龟苓膏.html"><strong aria-hidden="true">7.16.</strong> 龟苓膏</a></li></ol></li><li class="chapter-item expanded "><a href="../../drink/index.html"><strong aria-hidden="true">8.</strong> 饮品制作</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../drink/B52轰炸机.html"><strong aria-hidden="true">8.1.</strong> B52轰炸机</a></li><li class="chapter-item expanded "><a href="../../drink/Mojito莫吉托.html"><strong aria-hidden="true">8.2.</strong> Mojito莫吉托</a></li><li class="chapter-item expanded "><a href="../../drink/冬瓜茶.html"><strong aria-hidden="true">8.3.</strong> 冬瓜茶</a></li><li class="chapter-item expanded "><a href="../../drink/冰粉/冰粉.html"><strong aria-hidden="true">8.4.</strong> 冰粉</a></li><li class="chapter-item expanded "><a href="../../drink/可乐桶.html"><strong aria-hidden="true">8.5.</strong> 可乐桶</a></li><li class="chapter-item expanded "><a href="../../drink/奇异果菠菜特调/奇异果菠菜特调.html"><strong aria-hidden="true">8.6.</strong> 奇异果菠菜特调</a></li><li class="chapter-item expanded "><a href="../../drink/奶茶.html"><strong aria-hidden="true">8.7.</strong> 奶茶</a></li><li class="chapter-item expanded "><a href="../../drink/杨枝甘露.html"><strong aria-hidden="true">8.8.</strong> 杨枝甘露</a></li><li class="chapter-item expanded "><a href="../../drink/柠檬水/柠檬水.html"><strong aria-hidden="true">8.9.</strong> 柠檬水</a></li><li class="chapter-item expanded "><a href="../../drink/泰国手标红茶/泰国手标红茶.html"><strong aria-hidden="true">8.10.</strong> 泰国手标红茶</a></li><li class="chapter-item expanded "><a href="../../drink/海边落日/海边落日.html"><strong aria-hidden="true">8.11.</strong> 海边落日</a></li><li class="chapter-item expanded "><a href="../../drink/百香果橙子特调/百香果橙子特调.html"><strong aria-hidden="true">8.12.</strong> 百香果橙子特调</a></li><li class="chapter-item expanded "><a href="../../drink/砂糖椰子冰沙/砂糖椰子冰沙.html"><strong aria-hidden="true">8.13.</strong> 砂糖椰子冰沙</a></li><li class="chapter-item expanded "><a href="../../drink/耙耙柑茶/耙耙柑茶.html"><strong aria-hidden="true">8.14.</strong> 耙耙柑茶</a></li><li class="chapter-item expanded "><a href="../../drink/菠萝咖啡特调/菠萝咖啡特调.html"><strong aria-hidden="true">8.15.</strong> 菠萝咖啡特调</a></li><li class="chapter-item expanded "><a href="../../drink/酸梅汤/酸梅汤.html"><strong aria-hidden="true">8.16.</strong> 酸梅汤</a></li><li class="chapter-item expanded "><a href="../../drink/酸梅汤（半成品加工）.html"><strong aria-hidden="true">8.17.</strong> 酸梅汤（半成品加工）</a></li><li class="chapter-item expanded "><a href="../../drink/金汤力/金汤力.html"><strong aria-hidden="true">8.18.</strong> 金汤力</a></li><li class="chapter-item expanded "><a href="../../drink/金菲士/金菲士.html"><strong aria-hidden="true">8.19.</strong> 金菲士</a></li><li class="chapter-item expanded "><a href="../../drink/长岛冰茶.html"><strong aria-hidden="true">8.20.</strong> 长岛冰茶</a></li></ol></li><li class="chapter-item expanded "><a href="../../breakfast/index.html"><strong aria-hidden="true">9.</strong> 早餐食谱</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../breakfast/吐司果酱.html"><strong aria-hidden="true">9.1.</strong> 吐司果酱</a></li><li class="chapter-item expanded "><a href="../../breakfast/太阳蛋.html"><strong aria-hidden="true">9.2.</strong> 太阳蛋</a></li><li class="chapter-item expanded "><a href="../../breakfast/完美水煮蛋.html"><strong aria-hidden="true">9.3.</strong> 完美水煮蛋</a></li><li class="chapter-item expanded "><a href="../../breakfast/微波炉荷包蛋.html"><strong aria-hidden="true">9.4.</strong> 微波炉荷包蛋</a></li><li class="chapter-item expanded "><a href="../../breakfast/微波炉蛋糕.html"><strong aria-hidden="true">9.5.</strong> 微波炉蛋糕</a></li><li class="chapter-item expanded "><a href="../../breakfast/手抓饼.html"><strong aria-hidden="true">9.6.</strong> 手抓饼</a></li><li class="chapter-item expanded "><a href="../../breakfast/桂圆红枣粥.html"><strong aria-hidden="true">9.7.</strong> 桂圆红枣粥</a></li><li class="chapter-item expanded "><a href="../../breakfast/水煮玉米.html"><strong aria-hidden="true">9.8.</strong> 水煮玉米</a></li><li class="chapter-item expanded "><a href="../../breakfast/温泉蛋/温泉蛋.html"><strong aria-hidden="true">9.9.</strong> 温泉蛋</a></li><li class="chapter-item expanded "><a href="../../breakfast/溏心蛋.html"><strong aria-hidden="true">9.10.</strong> 溏心蛋</a></li><li class="chapter-item expanded "><a href="../../breakfast/煎饺.html"><strong aria-hidden="true">9.11.</strong> 煎饺</a></li><li class="chapter-item expanded "><a href="../../breakfast/燕麦鸡蛋饼.html"><strong aria-hidden="true">9.12.</strong> 燕麦鸡蛋饼</a></li><li class="chapter-item expanded "><a href="../../breakfast/牛奶燕麦.html"><strong aria-hidden="true">9.13.</strong> 牛奶燕麦</a></li><li class="chapter-item expanded "><a href="../../breakfast/空气炸锅面包片.html"><strong aria-hidden="true">9.14.</strong> 空气炸锅面包片</a></li><li class="chapter-item expanded "><a href="../../breakfast/美式炒蛋.html"><strong aria-hidden="true">9.15.</strong> 美式炒蛋</a></li><li class="chapter-item expanded "><a href="../../breakfast/苏格兰蛋/苏格兰蛋.html"><strong aria-hidden="true">9.16.</strong> 苏格兰蛋</a></li><li class="chapter-item expanded "><a href="../../breakfast/茶叶蛋.html"><strong aria-hidden="true">9.17.</strong> 茶叶蛋</a></li><li class="chapter-item expanded "><a href="../../breakfast/蒸水蛋.html"><strong aria-hidden="true">9.18.</strong> 蒸水蛋</a></li><li class="chapter-item expanded "><a href="../../breakfast/蒸花卷.html"><strong aria-hidden="true">9.19.</strong> 蒸花卷</a></li><li class="chapter-item expanded "><a href="../../breakfast/蛋煎糍粑.html"><strong aria-hidden="true">9.20.</strong> 蛋煎糍粑</a></li><li class="chapter-item expanded "><a href="../../breakfast/金枪鱼酱三明治.html"><strong aria-hidden="true">9.21.</strong> 金枪鱼酱三明治</a></li><li class="chapter-item expanded "><a href="../../breakfast/鸡蛋三明治.html"><strong aria-hidden="true">9.22.</strong> 鸡蛋三明治</a></li></ol></li><li class="chapter-item expanded "><a href="../../condiment/index.html"><strong aria-hidden="true">10.</strong> 调味料制作</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../condiment/油泼辣子/油泼辣子.html"><strong aria-hidden="true">10.1.</strong> 油泼辣子</a></li><li class="chapter-item expanded "><a href="../../condiment/油酥.html"><strong aria-hidden="true">10.2.</strong> 油酥</a></li><li class="chapter-item expanded "><a href="../../condiment/炸串酱料.html"><strong aria-hidden="true">10.3.</strong> 炸串酱料</a></li><li class="chapter-item expanded "><a href="../../condiment/简易版炒糖色.html"><strong aria-hidden="true">10.4.</strong> 简易版炒糖色</a></li><li class="chapter-item expanded "><a href="../../condiment/糖醋汁.html"><strong aria-hidden="true">10.5.</strong> 糖醋汁</a></li><li class="chapter-item expanded "><a href="../../condiment/草莓酱/草莓酱.html"><strong aria-hidden="true">10.6.</strong> 草莓酱</a></li><li class="chapter-item expanded "><a href="../../condiment/葱油.html"><strong aria-hidden="true">10.7.</strong> 葱油</a></li><li class="chapter-item expanded "><a href="../../condiment/蒜香酱油.html"><strong aria-hidden="true">10.8.</strong> 蒜香酱油</a></li><li class="chapter-item expanded "><a href="../../condiment/蔗糖糖浆/蔗糖糖浆.html"><strong aria-hidden="true">10.9.</strong> 蔗糖糖浆</a></li></ol></li><li class="chapter-item expanded "><a href="../../end.html"><strong aria-hidden="true">11.</strong> 声明</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">cookbook</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="凉粉的做法"><a class="header" href="#凉粉的做法">凉粉的做法</a></h1>
+<p>伤心凉粉吃了不会让人伤心的哦！</p>
+<p>预估烹饪难度：★★★</p>
+<h2 id="必备原料和工具"><a class="header" href="#必备原料和工具">必备原料和工具</a></h2>
+<ul>
+<li>豌豆淀粉</li>
+<li>大蒜</li>
+<li>小米辣</li>
+<li>辣椒粉</li>
+<li>酱油</li>
+<li>醋</li>
+<li>白糖</li>
+<li>鸡精</li>
+<li>盐</li>
+<li>花生碎</li>
+<li>香菜</li>
+</ul>
+<h2 id="计算"><a class="header" href="#计算">计算</a></h2>
+<p>下述材料为一人份，每次制作前需要确定计划做几份。一份正好够一个人吃。</p>
+<ul>
+<li>豌豆淀粉  100g</li>
+<li>大蒜   3 瓣</li>
+<li>小米辣  3 颗</li>
+<li>辣椒粉  10g</li>
+<li>酱油   10ml</li>
+<li>醋   10ml</li>
+<li>白糖  3ml</li>
+<li>鸡精  3g</li>
+<li>盐  3g</li>
+<li>花生碎  5g</li>
+<li>香菜  5g</li>
+</ul>
+<h2 id="操作"><a class="header" href="#操作">操作</a></h2>
+<ul>
+<li>
+<p>准备食材。</p>
+</li>
+<li>
+<p>把豌豆淀粉和水各 100 克混合搅拌。</p>
+</li>
+<li>
+<p>往锅中倒入 600g 水，大火煮开后转为小火。</p>
+</li>
+<li>
+<p>倒入淀粉水，边倒边不断的搅拌，搅拌到浓稠且色泽均匀。</p>
+</li>
+<li>
+<p>找一个容器，在容器中刷一层薄薄的食用油。</p>
+</li>
+<li>
+<p>将煮好的淀粉倒入容器中冷藏 2-4 小时。</p>
+</li>
+<li>
+<p>冷藏后取出，脱模，切条。</p>
+</li>
+<li>
+<p>大蒜和小米辣剁成沫，放上 10g 辣椒粉，5g 花生碎，热油搅拌均匀。</p>
+</li>
+<li>
+<p>再加入 10ml 酱油，10ml 醋，5g 白糖，3g 鸡精，3g 盐搅拌均匀。</p>
+</li>
+<li>
+<p>将调味料倒在凉粉上，然后撒上香菜即可。</p>
+</li>
+</ul>
+<h2 id="附加内容"><a class="header" href="#附加内容">附加内容</a></h2>
+<ul>
+<li>参考: <a href="https://www.zhms.cn/recipe/mzvyy.html?source=2">制作凉粉的详细步骤</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../staple/中式馅饼/中式馅饼.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="../../staple/基础牛奶面包/基础牛奶面包.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../staple/中式馅饼/中式馅饼.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="../../staple/基础牛奶面包/基础牛奶面包.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + " ";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
