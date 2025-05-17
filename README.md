@@ -31,4 +31,4 @@ deno run --allow-net --allow-read main.ts
 ```
 
 # 在线查看
-You can view the cookbook at [https://easy-cookbook.deno.dev](https://easy-cookbook.deno.dev)
+在线查看该食谱电子书：[https://easy-cookbook.deno.dev](https://easy-cookbook.deno.dev)
