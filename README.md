@@ -1,8 +1,8 @@
 # Cookbook 🍳
-[./README.md](中文)
-[./README_EN.md](English)
+[中文](./README.md) | [English](./README_EN.md)
 
-这是一个基于 GitHub 项目 "HowToCook" 的简化版本，主要界面文件由 mdbook 生成，使用 deno 提供运行时。
+
+这是一个基于 GitHub 项目 "HowToCook" 的简化版本的食谱电子书（没有图片），主要界面文件由 mdbook 生成，使用 deno 提供运行时。
 
 # 快速开始
 
